@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>个人日记</title>
+<meta name="keywords" content="个人日记" />
+<meta name="description" content="个人日记" />
+<link href="css/base.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/m.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+window.onload = function ()
+{
+	var oH2 = document.getElementsByTagName("h2")[0];
+	var oUl = document.getElementsByTagName("ul")[0];
+	oH2.onclick = function ()
+	{
+		var style = oUl.style;
+		style.display = style.display == "block" ? "none" : "block";
+		oH2.className = style.display == "block" ? "open" : ""
+	}
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+  <div class="headtop"></div>
+  <div class="contenttop">
+    <div class="logo f_l">江南墨卷</div>
+    <div class="search f_r">
+      <form action="" method="post" name="searchform" id="searchform">
+        <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+        <input name="show" value="title" type="hidden">
+        <input name="tempid" value="1" type="hidden">
+        <input name="tbname" value="news" type="hidden">
+        <input name="Submit" class="input_submit" value="搜索" type="submit">
+      </form>
+    </div>
+    <div class="blank"></div>
+    <div id="mnav">
+    <h2><span class="navicon"></span></h2>
+    <ul>
+      <li><a href="/">网站首页</a></li>
+      <li><a href="/about.html">关于我</a></li>
+      <li><a href="/download/">模板分享</a>
+         <ul>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+          </ul>
+        </li>
+      <li><a href="/jstt/">学无止境</a>
+            <ul>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+          </ul></li>
+      <li><a href="/news/">慢生活</a>
+            <ul>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+          </ul></li>
+      <li><a href="/e/tool/gbook/?bid=3">留言</a></li>
+    </ul>
+  </div>
+    <nav>
+      <div  class="navigation">
+        <ul class="menu">
+          <li><a href="index.html">网站首页</a></li>
+          <li><a href="#">关于我</a>
+            <ul>
+              <li><a href="about.html">个人简介</a></li>
+              <li><a href="listpic.html">个人相册</a></li>
+            </ul>
+          </li>
+          <li><a href="#">我的日记</a>
+            <ul>
+              <li><a href="newslistpic.html">个人日记</a></li>
+              <li><a href="newslistpic.html">学习笔记</a></li>
+            </ul>
+          </li>
+          <li><a href="newslistpic.html">技术文章</a> </li>
+          <li><a href="#">给我留言</a> </li>
+          <li><a target="_blank" href="pigpig.html">谣谣</a> </li>
+          
+        </ul>
+      </div>
+    </nav>
+    <SCRIPT type=text/javascript>
+	// Navigation Menu
+	$(function() {
+		$(".menu ul").css({display: "none"}); // Opera Fix
+		$(".menu li").hover(function(){
+			$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
+		},function(){
+			$(this).find('ul:first').css({visibility: "hidden"});
+		});
+	});
+</SCRIPT> 
+  </div>
+</header>
+<div class="container">
+  <div class="con_content">
+    <div class="about_box">
+      <h2 class="nh1"><span>您现在的位置是：<a href="index.html" target="_blank">网站首页</a>>><a href="#" target="_blank">阅读原文</a></span><b>【内容来自知乎（摘录）】</b></h2>
+      <div class="dtxw box">
+        <li>
+          <div class="dttext">
+            <ul>
+              <h2><a href="#">【自我提升】</a></h2>
+              <p>1、永远不要看一个人说什么，要看他做什么。
+				
+				一个嘴上说：「今天我来买单吧」，大家吃饱他就躲去洗手间的人，不值得深交。
+				
+				那些平时总是损你，但每次当你觉得「我要完了」，就跑过来帮你兜底的人，值得交往一辈子。
+				<img src="images/maintopbg.jpg"/>
+				2、放纵自己善变的情绪，跟啪啪啪不戴套没有区别。
+				
+				虽然很爽，可一旦命中概率事件，你完全无法承担。
+				<img src="images/maintopbg.jpg"/>
+				3、想约喜欢的人，不要直接问他们有没有空？你可以问他们：“明天你想去喝奶茶，还是去K歌呢？”这会让他们感觉是自己在做决定，还能减少他们对「未知情况」的判断成本，从而心甘情愿地被你约出去。如果你只是问你有没有空，他的选项就是“有空和没空”，而他不知道你想干什么，出于对未知事物的恐惧，他们大概率会选择没空。
+				<img src="images/maintopbg.jpg"/>
+				4、有人对你喋喋不休，你可以尝试两个办法：
+				
+				捡起你故意掉在地上的东西，不经意地打乱他的节奏。
+				起身，边听边走到一个需要安静的地方，迫使他闭嘴；或者车站，跟他挥手告别。
+				如此，你便可以神不知鬼不觉地、不失礼貌地打断他的话题。
+				<img src="images/maintopbg.jpg"/>
+				5、“想要”的时候，主动说出来。
+				
+				“有事情是要说出来的，不要等着对方去领悟，对方不是你，不知道你想要什么，等到最后只能是伤心和失望，尤其是感情。“——麦兜
+				<img src="images/maintopbg.jpg"/>
+				6、在备忘录里，将好朋友的生日记录下来，并设置提醒。不用追求送出什么大礼，只要在那一天给他送上祝福，对方就会很开心。因为生日被别人记住是一件很温暖的事情。
+				<img src="images/maintopbg.jpg"/>
+				7、想让别人听进去你的道理，表达同理心很重要。用降级的方式沟通，“我懂你为什么生气。”“我也觉得那个人很烦。”“我很能理解你的感受。”这会让对方产生被认同感，从而冷静下来听你说话。
+				<img src="images/maintopbg.jpg"/>
+				8、面对怒火，最聪明的做法是保持镇定。这会让他们的火气无处发泄，甚至更生气，但过后他们一定会感到深深的愧疚。
+				<img src="images/maintopbg.jpg"/>
+				9、想要做一件事，别用询问的方式进行。
+				
+				“外面雨很大，要我去接你吗？”
+				
+				“你好像生病了，需要送你去医院吗？”
+				
+				别问，问就是不想做。很多情况下，我们不是真心要做一件事时，都无法坚定地说出：
+				
+				“外面雨很大，我去接你。”
+				
+				“你好像生病了，我马上送你去医院。”
+				
+				因为你在期待对方告诉你“不用了”。反之，当对方读懂了你的言外之意，你们的关系也会渐渐生疏。那倒不如，真的想做就坚定去做，不想做的时候就别说话。
+				<img src="images/maintopbg.jpg"/>
+				10、建立边界感，保证最舒适的相处的空间。我认为边界感就是，我喜欢看书，你喜欢玩音乐，也许我不能理解你的快乐，但我会永远尊重你的爱好。
+				<img src="images/maintopbg.jpg"/>
+				11、太过无情是自我，但太过热情是冒犯。不要用“我是为你好”来强迫别人接受你所谓的好意，当然，你也无需理会那些强加给你的“好心”。
+				<img src="images/maintopbg.jpg"/>
+				12、朋友分两种，一种是知己，一种是人脉。前者是用来满足情感需求的，他们会被你的灵魂所吸引；后者是用来满足利益驱动的，他们会被你的能力所吸引。终上，任何功利化方式找朋友，都是不可行的。
+				<img src="images/maintopbg.jpg"/>
+				13、不要看到达官权贵就阿谀奉承，面对服务行业就趾高气昂，无论舔狗还是傲犬，都是摇尾巴的狗。
+				<img src="images/maintopbg.jpg"/>
+				14、经常打断别人说话，是一种很low的行为。不管你多不屑对方的言论，都尽量等别人把话说完，再表达自己的意见，谨慎的沉默就是最精明的话术。
+				<img src="images/maintopbg.jpg"/>
+				15、去别人家作客，主人一直有一搭没一搭地问你要不要喝茶、吃东西，或者突然频繁地接起电话，说明你差不多可以走了，人家想送客了。
+				<img src="images/maintopbg.jpg"/>
+				16、向别人提供帮助时，不要一副活菩萨下凡的样子，要诚心诚意地去帮忙。对方如果同样明白事理，日后你就多了个互帮互助的朋友；若对方觉得你是个老好人，一再麻烦你，拉黑删除不再见。
+				<img src="images/maintopbg.jpg"/>
+				17、真正牛逼的人不用刻意表现自己，就会给人一种不明觉厉的感觉；真正的傻逼总喜欢装聪明，很容易就会暴露自己真的傻这件事。所以，时刻保持自谦才是硬道理，你牛逼时总有人比你更牛逼；但你不牛逼时，懂得不装逼就是真的牛逼。
+				<img src="images/maintopbg.jpg"/>
+				18、事情做成前，不要声张。比如，当你决定减肥，不要先在朋友圈发通知。等你成功瘦下来后，再发朋友圈，大家就会觉得“哇你瘦了好多啊！”这种“先斩后奏”可太妙了。
+				<img src="images/maintopbg.jpg"/>
+				19、每个人都带着原生家庭的烙印，如果你的原生家庭很糟糕，你也不该就沉溺在这个怪圈里。你成年后的很多不幸，并不是原生家庭带来的，而是逃不开原生家庭的束缚带来的。
+				
+				比如，你的母亲是一个脾气暴躁的人，你顺理成章地继承了这种性格。可你从来没想过做出改变，而是指责这是原生家庭带给你的伤害。那你永远只会活在原生家庭的阴影里，一直延续这种生活模式，万劫不复。
+				
+				懂得跳开原生家庭的怪圈，才有可能造就你梦想中的美好家庭。
+				<img src="images/maintopbg.jpg"/>
+				20、收到消息要回复，在知乎看到有帮助的回答要点赞，这都是一种美德。
+				<img src="images/maintopbg.jpg"/>
+				21、很多时候，不表态就是表态，没有正面的答应就是拒绝。不要穷追猛打要答案，人家只是不好意思直接拒绝你。识趣点，大家都不至于太尴尬。
+				<img src="images/maintopbg.jpg"/>
+				22、自嘲是一种自我保护机制，会立刻反客为主，此时别人再对你开玩笑或嘲讽，都会显得不识趣；同理，当别人自嘲时，你别傻傻的跟着一块吐槽。
+				<img src="images/maintopbg.jpg"/>
+				23、“病从口入，祸从口出”是一种高级的智慧。管住嘴，不吃垃圾、不说废话、不讲碎语、不吻不爱的人。
+				<img src="images/maintopbg.jpg"/>
+				24、对方很难过时，默默地陪伴胜过千言万语。
+				<img src="images/maintopbg.jpg"/>
+				25、要最基本的判断一个人，就看看他都跟什么朋友玩，看看他都把时间和金钱用在哪；但想要准确的判断一个人，你要看看他坏的时候不做什么，这能看到他的底线。
+				<img src="images/maintopbg.jpg"/>
+				26、那些脾气大的人，就像在身边埋了颗不定时炸弹，指不定哪个瞬间就炸了。你能力强脾气差，大抵只是朋友不多，但历史上的暴君都是亡国的命；若是能力弱脾气差，那便是彻头彻尾的失败者了，因为别人会知道，原来你急了也就这点本事。要记住：你有什么脾气，就有什么命。
+				<img src="images/maintopbg.jpg"/>
+				27、人人都有负面情绪，但不一定都有负能量。你有负能量的时候，学着自己消化一下，听听音乐、睡睡觉之类的。千万不要习惯性地把你的周围人当成垃圾桶，跟他们不间断输送负能量，不然垃圾分类有“废人”的话，他们一定很想把你丢进去。
+				<img src="images/maintopbg.jpg"/>
+				28、大量阅读、持续阅读，古今中外、文学小说，都可以多读。不是要让你能在朋友圈发一些文艺矫情的句子，而是当你广泛阅读到一定程度的时候，你的谈吐和气质会自然而然让人感到舒服。只知道刷八卦追星看言情打游戏，这些会腐蚀你，让你变得庸俗，让你跟人聊天时，不知道讲什么，只会点头和傻笑。如果你不擅长找书，但想读好书，可以关注我的公众号铁木君，回复书单，领取铁木君这几年积攒下来的优质私人书单，这些书是帮助我从一个普通实习生，到两家公司创始人的核心之一。
+				<img src="images/maintopbg.jpg"/>
+				29、不要轻易地相信别人对你的感情，感情绑架是一个很邪乎的事情，它能使人与人之间，花最少的成本，获得最高的回报。
+				<img src="images/maintopbg.jpg"/>
+				30、如果你喜欢抱怨，不如找面镜子，对着镜子里的自己抱怨。如此以往，你会发现不仅事情很烦，你本人也很烦，慢慢地就变得不爱抱怨了。
+				<img src="images/maintopbg.jpg"/>
+				31、让自己保持一点杀气，不是叫你怒气冲天看谁谁不爽，而是一种“敌若犯我，我定犯人”的气场。舍友不打招呼用你的东西，你为了宿舍和谐一再隐忍，最终他得寸进尺；同事把自己的任务丢给你，你为了促进同事关系答应了，最终他变本加厉。适当的情绪并不会影响世界和平，但一直的以和为贵就会摧毁你的价值。
+				<img src="images/maintopbg.jpg"/>
+				32、你可以给伤害你的人第二次机会，但绝不能有第三次。每一次机会都是你交给对方的，用来伤害你的武器，第二次的枪没能将你打死，第三次绝对会用地雷把你炸死。
+				<img src="images/maintopbg.jpg"/>
+				33、年轻时，要持续拔高人生的纬度，持续不断地学习，扩容知识储备；而立后，要继续推广人生的经度，包容地接待世界，隐去一身傲气与世俗。
+				<img src="images/maintopbg.jpg"/>
+				34、成熟不是摒弃天真，是在世故中找到自己的纯真。不要用深夜的烈酒、孤独的烟圈来标榜成熟；要在浮躁的环境里，静下心来、在诱惑的选择里，明辨是非、在忙碌的工作里，寻求自我。
+				<img src="images/maintopbg.jpg"/>
+				35、不要怕丢脸，越怕丢脸越容易丢脸。每一次失败都是一次成长的机会，这没什么好丢脸的，只要你能吸取教训，下次就是你长脸的时候。
+				<img src="images/maintopbg.jpg"/>
+				36、顺其自然是懒惰者的借口。真正的顺其自然是功利化过程，佛系化结果，不是命运化安排。当你付出全力去完成一件事，享受其中，不强求结果，你会收获得比别人更多。
+				<img src="images/maintopbg.jpg"/>
+				37、当我们学习、工作、思考等行为时，是一种体力消耗机制；我们需要靠睡眠、发呆、娱乐等手段，来产生活力机制。忽略消耗与产出的比值，无论哪一者不平衡，都是对身心极大的劳损。
+				<img src="images/maintopbg.jpg"/>
+				38、用抬杠精神去思考问题，你会发现世界七窍玲珑。举个栗子。
+				
+				“加班的人都是在为梦想努力。”
+				
+				“努力的是老板的梦想。”
+				
+				“读书能提升一个人的气质。”
+				
+				“我不读书气质也很好。”
+				
+				此时你正站在一个多维度思考的空间，进而产生属于自己的观点。
+				
+				而为了避免成为真正的杠精，要结合实践去论证，进而形成属于自己的思维惯性。
+				<img src="images/maintopbg.jpg"/>
+				39、处于高位的人，必然有他的过人之处，不管是什么，你只要保持平常心就好了。他是通过努力，那你就保持努力；他是通过实力，那你就磨炼实力；他是通过关系，那你就别想太多了。
+				<img src="images/maintopbg.jpg"/>
+				40、如何判断自己掌握了一项信息或知识。将其讲解给别人听，当你发现你只能浑水摸鱼式地讲出来时，说明你没掌握；当你能够成体系地讲解出来时，你会掌握得更牢固。因为讲解的过程需要你梳理并记住要点和核心。
+				<img src="images/maintopbg.jpg"/>
+				41、出门在外一定要带好钥匙、纸巾、手机和脑子。特别是脑子，不要被路上的推销一顿洗脑，就开开心心地充卡办会员，这种情况很多时候是要上《1818黄金眼》的。
+				<img src="images/maintopbg.jpg"/>
+				42、贪便宜是最贵的成本。
+				
+				这件事情我真的深有体会，早在几年前，安卓手机还没发展到这种牛逼轰轰的程度。
+				
+				当时我嫌苹果售价太贵，思来想去买了个相较便宜的安卓手机，结果用了大半年开始出现各种毛病，无奈之下又换了一部手机。如此，三年下来我换了近5部手机。
+				
+				后来我真的气不过啊，太费钱了吧！跟我爸拿了他的二手苹果来用，用了两年都没出现什么大毛病（我真的不是在给苹果打广告啊，现在的安卓手机也很厉害）。
+				
+				所以，有时宁愿多花点钱买个质量好的东西，也比贪那点小便宜好。
+				<img src="images/maintopbg.jpg"/>
+				43、办公室号称八卦传播机，是一个最藏不住秘密的地方。不要跟你的同事讲另一个同事的坏话，不出一周一定会传到另一个同事耳朵里。
+				<img src="images/maintopbg.jpg"/>
+				44、办公室是最不能表现情绪的地方，心理的委屈或积怨，要留给深夜的角落，实在不行也要做到表面笑嘻嘻心理***。你失控的情绪不会博得任何同情，只会变成新鲜的办公轶事。
+				<img src="images/maintopbg.jpg"/>
+				45、当别人在休息或办公时，务必要保持安静，一些无法避免的声响，尽量降低一些，这是最基本的素养。
+				<img src="images/maintopbg.jpg"/>
+				46、你不表达的时候，别人永远不知道你的能力到哪里。当遇到难以独自承担的任务时，请求资源并不丢脸，反而试图独自冲破障碍的人会搞砸一切。
+				<img src="images/maintopbg.jpg"/>
+				47、做事情要往超预期的方向去努力，因为你认为的“把事情做完就好了”，不一定是真的达到了对方的预期；但如果你的初心是“超预期”，收获往往也会“超预期”。
+</p>
+              <div class="binfo"><span class="lm"><a href="#">个人日记</a></span><span>已有100人阅读</span><span class="atime">2019-11-28</span></div>
+            </ul>
+          </div>
+        </li>
+      </div>
+    </div>
+  </div>
+  <div class="blank"></div>
+  <!-- container代码 结束 -->
+ </div> 
+  <footer>
+    <div class="footer">
+      <div class="f_l">
+        <p>All Rights Reserved 版权所有：<a href="http://www.yangqq.com">刘杰个人博客</a> 备案QQ号：2026505852</p>
+      </div>
+      <div class="f_r textr">
+        <p>Design by DanceSmile</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
