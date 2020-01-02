@@ -1,337 +1,249 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-	<meta charset="UTF-8">
-	<title>厌世宅</title>
-    <link rel="stylesheet" type="text/css" href="css/mains.css">
-    <link rel="stylesheet" type="text/css" href="css/process.css">
-    <link rel="shortcut icon"  type="image/x-icon" href="favicon.ico" />
-    
-    <script type="text/javascript">
-        //设定rem值
-        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth/20 + 'px';
-    </script>
+<meta charset="utf-8">
+<title>厌世宅</title>
+<meta name="keywords" content="厌世宅" />
+<meta name="description" content="厌世宅" />
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/m.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
-	<header class="head">
-        <div class="head_logo_div">
-            <img class="logo_img" src="images/upload/head2.jpg"></a>
-        </div>
-        <div class="head_nav_div">
-             <nav class="head_nav">
-                <ul id="nav_ul">
-                    <li class="nav_li_on nav_ul_li">主页</li>
-                    <li class="nav_ul_li">个人简介</li>
-                    <li class="nav_ul_li">那些话</li>
-                    <li class="nav_ul_li">业余爱好</li>
-                    <li class="nav_ul_li">联系方式</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="clear"></div>
-    </header>
-    
-    <ul class="float_btn" id="float_btn">
-        <li class="btn_on"></li>
-        <li></li>
-        <li></li>
-        <li></li>
+<script>
+window.onload = function ()
+{
+	var oH2 = document.getElementsByTagName("h2")[0];
+	var oUl = document.getElementsByTagName("ul")[0];
+	oH2.onclick = function ()
+	{
+		var style = oUl.style;
+		style.display = style.display == "block" ? "none" : "block";
+		oH2.className = style.display == "block" ? "open" : ""
+	}
+}
+</script>
+<div id="wrapper">
+  <header>
+    <div class="headtop"></div>
+    <div class="contenttop">
+      <div class="logo f_l">厌世宅</div>
+      <div class="search f_r">
+        <form action="" method="post" name="searchform" id="searchform">
+          <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+          <input name="show" value="title" type="hidden">
+          <input name="tempid" value="1" type="hidden">
+          <input name="tbname" value="news" type="hidden">
+          <input name="Submit" class="input_submit" value="搜索" type="submit">
+        </form>
+      </div>
+      <div class="blank"></div>
+      
+      
+      <div id="mnav">
+    <h2><span class="navicon"></span></h2>
+    <ul>
+      <li><a href="/">网站首页</a></li>
+      <li><a href="/about.html">关于我</a></li>
+      <li><a href="/download/">模板分享</a>
+         <ul>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+          </ul>
+        </li>
+      <li><a href="/jstt/">学无止境</a>
+            <ul>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+          </ul></li>
+      <li><a href="/news/">慢生活</a>
+            <ul>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+         <li><a href="#.html">关于我</a></li>
+          </ul></li>
+      <li><a target="_blank" href="pigpig.html">谣谣</a> </li>
     </ul>
-    
-    <div class="wrapBox" id="wrapBox">
-        <div class="box">
-            <img class="box_bg" src="images/upload/pic_1.jpg">
-            <div class="box01_content">
-                <div class="head_div">
-                    <div class="cycle_item">
-                        <a href="" class="github_a" id="github_a" target="_blank">
-                            <span class="github_icon"></span>
-                            <span class="github_text"><p class="item_name">GitHub</p></span>
-                        </a>
-                        <a href="" class="weibo_a" id="weibo_a" target="_blank">
-                            <span class="weibo_icon"></span>
-                            <span class="weibo_text"><p class="item_name">微博</p> </span>
-                        </a>
-                        <a href="" class="blog_a" id="blog_a" target="_blank">
-                            <span class="blog_icon"></span>
-                            <span class="blog_text"><p class="item_name"> 博客</p></span>
-                        </a>
+  </div>
 
-                        <div class="green_cycle">
-                            <img class="green_cycle_img" src="images/icon/green_cycle.svg">
-                            <div class="yellow_cycle">
-                                <img class="yellow_cycle_img" src="images/icon/yellow_cycle.svg">
-                                <div class="blue_cycle">
-                                    <img class="blue_cycle_img" src="images/icon/blue_cycle.svg">
-                                    <div class="head_img_div">
-                                        <img class="head_img" src="images/upload/head.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h1 class="title">嘿嘿</h1>
-                <h2 class="title_h2">千里之行，始于足下</h2>
-                <div id="box01_text">
-                <p class="box01_p">不久前还只是一个流浪的小青年.</p>
-                <p class="box01_p">现在还只是一只喜欢动漫和文学的学生党.</p>
-                <p class="box01_p">不久以后将是又一个人生迷茫的旅行者.</p>
-                </div>
-            </div>
-            <div class="arrow_div">
-                <img class="arrow_img" src="images/icon/arrowhead.png">
-            </div>
+      
+      
+      
+      
+      
+      <nav>
+        <div  class="navigation">
+          <ul class="menu">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="#">关于我</a>
+              <ul>
+                <li><a href="about.html">个人简介</a></li>
+                <li><a href="listpic.html">个人相册</a></li>
+              </ul>
+            </li>
+            <li><a href="#">我的日记</a>
+              <ul>
+                <li><a href="newslistpic.html">个人日记</a></li>
+                <li><a href="newslistpic.html">学习笔记</a></li>
+              </ul>
+            </li>
+            <li><a href="newslistpic.html">技术文章</a> </li>
+            <li><a href="#">给我留言</a> </li>
+			<li><a target="_blank" href="pigpig.html">谣谣</a> </li>
+          </ul>
         </div>
-        
-        <div class="box">
-            <img class="box_bg" src="images/upload/pic_2.jpg">
-            
-            <div class="box02_content box_content">
-                <div id='bar_container' class="bar_container">
-                    <div class='bar mint' data-percent='70' data-skill='HTML5+CSS3'></div>
-                    <div class='bar red' data-percent='50' data-skill='JavaScript'></div>
-                    <div class='bar lila' data-percent='50' data-skill='前端工程化'></div>
-                    <div class='bar orange' data-percent='50' data-skill='Node.js'></div>
-                    <div class='bar gray' data-percent='30' data-skill='Java || C++'></div>
-                    <div class="bar blue" data-percent='50' data-skill='PS&AE&PR&AI'></div>
-                    <div class="bar green" data-percent='60' data-skill='绘画'></div>
-                </div>
-                <div id="box02_text">
-                    <h1>About Skill</h1>
-                    <div class="overline"></div>
-                    <p>姓名：刘贵杰</p>
-                    <p>性别：男</p>
-                    <p>出生年月：2000/06/15</p>
-                    <p>家庭地址：云南省昭通市镇雄县杉树乡</p>
-                    <p>就读学校：云南新华电脑学院</p>
-                    <p>所学专业：软件开发</p>
-                    <p>爱好：听音乐，玩游戏</p>
-                    <p>性格：比较内向</p>
-                    <p>联系方式：QQ：2026505852</p>
-                    <p>座右铭：冥冥中该来则来，无处可逃”</p>
-                    <p>目标未来...</p>
-                    <p>成为一名前端开发工程师</p>
-					<div class="overline"></div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            
-            <div class="arrow_div">
-                <img class="arrow_img" src="images/icon/arrowhead.png">
-            </div>
-            
-        </div>
-        
-        <div class="box">
-            <img class="box_bg" src="images/upload/pic_3.jpg">
-            
-            <div class="box_content box03_content">
-                <ul id="timeUl" class="timeUl">
-                    <li>
-                        <div>
-							<h1>甜甜的情话（一）</h1>
-							 <p>你不要着急哦，你先去看你的书，我去看我的电影</p>
-							 <p>总有一天</p>
-							 <p>我们会坐在一起</p>
-						 	 <p>看同一本书，看同一部电影....</p>
-						 	 <p>嘿嘿</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                           <h1>甜甜的情话（二）</h1>
-                            <p>我不会因为你不好的一面就想离开你</p>
-                            <p>事实上</p>
-                            <p>看着你一边遮遮掩掩一边感到不安的时刻，我会更加想要抱紧你</p>
-                            <p>这世界只肯定所有美好的存在，但在我这里不是的</p>
-                            <p>我爱你的全部....</p>
-                        </div>
-                    </li>
-                    <li>
-                       <div>
-                          <h1>甜甜的情话（三）</h1>
-                           <p>希望你一辈子都是小孩儿</p>
-                           <p>对所有事都好奇，爱哼小曲子，永远快乐</p>
-                           <p>喜欢和讨厌不用遮掩</p>
-                           <p>每天都能跟喜欢的人讲一大堆废话，也能互道晚安...</p>
-                        </div>
-                    </li>
-                    <li>
-                       <div>
-                          <h1>甜甜的情话（四）</h1>
-                           <p>我想要亲亲</p>
-                           <p>愿意上当受骗请给我一个亲亲</p>
-                           <p>给你自己买个教训</p>
-						   <p>不要问为什么别人骗钱我骗亲亲</p>
-                           <p>因为我是小流氓只喜欢你....</p>
-                        </div>
-                    </li>
-                </ul>
-                 <div class="left_div" id="left_div">
-                     <img class="left_arrow" src="images/icon/arrowleft.png">
-                 </div>
-                 <div class="right_div" id="right_div">
-                      <img class="right_arrow" src="images/icon/arrowright.png">
-                 </div>
-            </div>
-            
-             <div class="arrow_div">
-                <img class="arrow_img" src="images/icon/arrowhead.png">
-            </div>
-        </div>
-        
-        
-        <div class="box">
-            
-            <img class="box_bg" src="images/upload/pic_4.jpg">
-            <div class="box_content box04_content">
-                <h1 class="box04_title">Something Of Hobby</h1>
-                <ul class="hobby_content">
-                    <li class="hobby_01">
-                        <div class="hobby_img_div">
-                            <div class="spinner spinner_01"></div>
-                            <div class="hobby_img">
-                                <img src="images/upload/kapok.jpg">
-                            </div>
-                            <div class="hobby_img_info">
-                                <h1>绘画</h1>
-                                <h2>手绘&CG</h2>
-                            </div>
-                        </div>
-                        <div class="hobby_text_div">
-                            <div class="hobby_img_info_mob">
-                                <h1>绘画/<a>手绘&CG</a></h1>
-                            </div>
-                            <p class="about_p">
-                                对于绘画的热爱一部分来自于对ACG的热爱,小学时就开始拿着笔头被要烂的铅笔瞎画,
-                                可惜父母和我都没发现这是个值得培养的爱好,以至于现在发展为一个手残.
-                            </p>
-                            <p>
-                                比较擅长铅笔手绘动漫人物,SAI动漫人物的绘制(我是手残，上色渣渣).喜欢的画师是樋上至.
-                                </a>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="hobby_02">
-                        <div class="hobby_img_div">
-                            <div class="spinner spinner_02"></div>
-                            <div class="hobby_img">
-                                <img src="images/upload/acg.png">
-                            </div>
-                            <div class="hobby_img_info">
-                                <h1>ACG</h1>
-                                <h2>动漫&视频&lol</h2>
-                            </div>
-                        </div>
-                        <div class="hobby_text_div">
-                            <div class="hobby_img_info_mob">
-                                <h1>ACG/<a>动漫&视频&lol</a></h1>
-                            </div>
-                            <p class="about_p">
-                                入宅作《犬夜叉》,看完《Angle Beats!》深陷泥潭,最喜欢K社的作品(包括Galgame),
-                                崇拜麻枝准,喜欢的歌手是ClariS.是个典型的萝莉控重度患者.
-                            </p>
-                            <p>
-                                动漫对我而言是和文学一样的文化,最具感染力的抒情方式,将来希望自己工作在二次元的领域.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="hobby_03">
-                        <div class="hobby_img_div">
-                            <div class="spinner spinner_03"></div>
-                            <div class="hobby_img">
-                                <img src="images/upload/reading.jpg">
-                            </div>
-                            <div class="hobby_img_info">
-                                <h1>文学</h1>
-                                <h2>历史&写作</h2>
-                            </div>
-                        </div>
-                        <div class="hobby_text_div">
-                            <div class="hobby_img_info_mob">
-                                <h1>文学/<a>历史&写作</a></h1>
-                            </div>
-                            <p class="about_p">
-                                和大多数人一样曾经也在可当上捧着一本小说看,以前喜欢小四韩寒马尔克斯村上春树,现在的兴趣
-                                转移到历史上去了,屌丝只有多读书才能提高自己的内涵.
-                            </p>
-                            <p>
-                                此外也会写点东西,就是毅力不够，仍需磨砺.
-                            </p>
-                        </div>
-                    </li>
-                    <div class="clear"></div>
-                </ul>
-            </div>
-             <div class="arrow_div">
-                <img class="arrow_img" src="images/icon/arrowhead.png">
-            </div>
-        </div>
-        
-        <foot id="foot" class="foot">
-            <h1 class="foot_title">Contact With Me</h1>
-            <div class="foot_info_main">
-                <ul>
-                    <li class="github_items">
-                        <a href="" target="_blank">GitHub</a>
-                    </li>
-                    <li class="google_items">
-                        <a href="" target="_blank">Google+</a>
-                    
-                    </li>
-                    <li class="twitter_items">
-                        <a href="" target="_blank">Twitter</a>
-                    
-                    </li>
-                    <li class="facebook_items">
-                        <a href="" target="_blank">FaceBook</a>
-                    
-                    </li>
-                    <li class="weibo_items">
-                        <a href="" target="_blank">微博</a>
-                    
-                    </li>
-                    <li class="zhihu_items">
-                        <a href="" target="_blank">知乎</a>
-                    
-                     </li>
-                     <li class="blog_items">
-                        <a href="" target="_blank">博客</a>
-                    
-                     </li>
-                     <li class="email_items">
-                        <a href="" target="_blank">邮箱</a>
-                    </li>
-                    <div class="clear"></div>
-                </ul>
-                <div class="qrcode_div">
-                    <span class="weixin">
-                        <a class="weixin_icon"></a>
-                        <img class="weixin_img" src="images/upload/weixin_qr.png">
-                    </span>
-                    <span class="dingding">
-                        <a class="dingding_icon"></a>
-                        <img class="dingding_img" src="images/upload/dingding_qr.png">
-                    </span>
-                    <span class="qq">
-                        <a class="qq_icon"></a>
-                        <img class="qq_img" src="images/upload/qq_qr.jpg">
-                    </span>
-                </div>
-            </div>
-            <div class="foot_power">
-                <h3>©2019 Pwoerd 
-                    <a href="" title="Night" target="_blank"> Night's</a>
-                    <a href="" title="IceEnd">刘杰个人博客</a>
-                    <a href="" title="beian" target="_blank">备案QQ号：2026505852</a>
-                </h3>
-            </div>
-        </foot>
+      </nav>
+      <SCRIPT type=text/javascript>
+	// Navigation Menu
+	$(function() {
+		$(".menu ul").css({display: "none"}); // Opera Fix
+		$(".menu li").hover(function(){
+			$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
+		},function(){
+			$(this).find('ul:first').css({visibility: "hidden"});
+		});
+	});
+</SCRIPT> 
     </div>
-    <script type="text/javascript" src="js/main.js"></script>
-</body>
-    
-</html>
+  </header>
+  <div class="jztop"></div>
+  <div class="container">
+    <div class="bloglist f_l">
+     
+     <ul>
+     <li>
+        <h3 class="blogtitle"><span><a href="#" title="css3" target="_blank" class="classname">个人博客</a></span><a href="" target="_blank">【高中生活】我想问一下，你们高中喜欢的那个ta，现在怎么样了？</a></h3>
+        <div class="bloginfo"><span class="blogpic"><a href="index-one.html" title="【高中生活】我想问一下，你们高中喜欢的那个ta，现在怎么样了？"><img src="images/01.jpg" alt="【高中生活】我想问一下，你们高中喜欢的那个ta，现在怎么样了？"></a></span>
+          <p>
+          	我高中喜欢的男孩子，我们现在还在一起
+          	   也许是上天注定，虽然我学的是文科，他学的理科,虽然他比我学习好很多，高考也比我优秀，但是我们还是在本省省会上了隔壁的大学。现在每天上完晚自习就可以见面......
+          </p>
+        </div>
+        <div class="autor"><span class="lm f_l"></span><span class="dtime f_l">2019-11-28</span><span class="viewnum f_l">浏览（<a href="#">520</a>）</span><span class="f_r"><a href="index-one.html" class="more">阅读原文&gt;&gt;</a></span></div>
+   
+      </li>
+     
+      <li>
+        <h3 class="blogtitle"><span><a href="#" title="css3" target="_blank" class="classname">个人博客</a></span><a href="" target="_blank">【剧透】如何看待 “我的青春恋爱物语果然有问题”的结局？</a></h3>
+        <div class="bloginfo"><span class="blogpic"><a href="index-two.html" title="【剧透】如何看待 “我的青春恋爱物语果然有问题”的结局？"><img src="images/02.jpg" alt="【剧透】如何看待 “我的青春恋爱物语果然有问题”的结局？"></a></span>
+          <p>首先惯例又虐团子了。团子告诉大老师，让他去前进吧，不必停留等待自己，自己会努力习惯三人间的新关系的。大老师挥了挥手，没有回头的踏上了脚踏车，团子自认为眼泪已经哭干了，手里的包变得异常的沉重，默默的走回了家......</p>
+        </div>
+        <div class="autor"><span class="lm f_l"></span><span class="dtime f_l">2019-11-28</span><span class="viewnum f_l">浏览（<a href="#">520</a>）</span><span class="f_r"><a href="index-two.html" class="more">阅读原文&gt;&gt;</a></span></div>
+   
+      </li>
+	  <li>
+        <h3 class="blogtitle"><span><a href="#l" title="css3" target="_blank" class="classname">个人博客</a></span><a href="" target="_blank">【烟】吸烟者与不吸烟着有哪些区别?</a></h3>
+        <div class="bloginfo"><span class="blogpic"><a href="index-three.html" title="【烟】吸烟者与不吸烟着有哪些区别?"><img src="images/06.jpg" alt="【烟】吸烟者与不吸烟着有哪些区别?"></a></span>
+          <p>有个好玩的现象，可能不吸烟的人不太懂哦。
+　			　本身我也是烟民，吸烟比较凶的，一天一包吧，或者一天半一包。如果我身体没反应我还能继续抽。就是我身体会给我一些反应，比如抽多了会恶心头痛。所以我比较能理解抽烟多和少的概念......</p>
+        </div>
+        <div class="autor"><span class="lm f_l"></span><span class="dtime f_l">2019-11-28</span><span class="viewnum f_l">浏览（<a href="#">520</a>）</span><span class="f_r"><a href="index-three.html" class="more">阅读原文&gt;&gt;</a></span></div>
+   
+      </li>
+	   <li>
+        <h3 class="blogtitle"><span><a href="#" title="css3" target="_blank" class="classname">个人博客</a></span><a href="" target="_blank">【生死】人猝死前会有特殊感觉吗？</a></h3>
+        <div class="bloginfo"><span class="blogpic"><a href="index-four.html" title="【生死】人猝死前会有特殊感觉吗？"><img src="images/03.jpg" alt="【生死】人猝死前会有特殊感觉吗？"></a></span>
+          <p>最接近死亡的一次，27岁，连续加班一个月左右，一天跟人在那聊业务，蹲下捡了个东西，起来后感觉胸有点闷，就挺了下胸（之前一直这样），结果这一挺，突然心脏一激灵，疼了一下，然后就感觉自己，怎么说呢，说不上是心跳过速还是心跳停止......</p>
+        </div>
+        <div class="autor"><span class="lm f_l"></span><span class="dtime f_l">2019-11-28</span><span class="viewnum f_l">浏览（<a href="#">520</a>）</span><span class="f_r"><a href="index-four.html" class="more">阅读原文&gt;&gt;</a></span></div>
+   
+      </li>
+	   <li>
+        <h3 class="blogtitle"><span><a href="#" title="css3" target="_blank" class="classname">个人博客</a></span><a href="" target="_blank">【自我提升】如何提升自己为人处世的能力?</a></h3>
+        <div class="bloginfo"><span class="blogpic"><a href="index-five.html" title="【自我提升】如何提升自己为人处世的能力?"><img src="images/04.jpg" alt="【自我提升】如何提升自己为人处世的能力"></a></span>
+          <p>永远不要看一个人说什么，要看他做什么。
 
+一个嘴上说：「今天我来买单吧」，大家吃饱他就躲去洗手间的人，不值得深交。
+
+那些平时总是损你，但每次当你觉得「我要完了」，就跑过来帮你兜底的人，值得交往一辈子......</p>
+        </div>
+        <div class="autor"><span class="lm f_l"></span><span class="dtime f_l">2019-11-28</span><span class="viewnum f_l">浏览（<a href="#">520</a>）</span><span class="f_r"><a href="index-five.html" class="more">阅读原文&gt;&gt;</a></span></div>
+   
+      </li>
+	  <li>
+        <h3 class="blogtitle"><span><a href="#" title="css3" target="_blank" class="classname">个人博客</a></span><a href="" target="_blank">【胸大】胸大是怎样的感觉？</a></h3>
+        <div class="bloginfo"><span class="blogpic"><a href="index-six.html" title="【胸大】胸大是怎样的感觉？"><img src="images/01.jpg" alt="【胸大】胸大是怎样的感觉？"></a></span>
+          <p>上学的时候，就因为胸大，被同学取绰号童颜巨乳，哎，胸大让当时的我真的很自卑，内衣不好买，跑步走路感觉好累，喘不过气。总是驼着背，母亲从来没教过我保养，也没教我怎么买内衣，总是买些不合身的内衣，胸都下垂了......</p>
+        </div>
+        <div class="autor"><span class="lm f_l"></span><span class="dtime f_l">2019-11-28</span><span class="viewnum f_l">浏览（<a href="#">520</a>）</span><span class="f_r"><a href="index-six.html" class="more">阅读原文&gt;&gt;</a></span></div>
+   
+      </li>
+    </ul> 
+     
+     
+     
+    </div>
+    <div class="r_box f_r">
+      <div class="tit01">
+        <h3 class="tit">关注我</h3>
+        <div class="gzwm">
+          <ul>
+            <li><a class="email" href="#" target="_blank">我的电话</a></li>
+            <li><a class="qq" href="#" target="_blank">我的邮箱</a></li>
+            <li><a class="tel" href="#" target="_blank">我的QQ</a></li>
+            <li><a class="prize" href="#">个人奖项</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--tit01 end-->
+      
+      <div class="tuwen">
+        <h3 class="tit">图文推荐</h3>
+        <ul>
+          <li><a href="#"><i><img src="images/01.jpg"></i><b>You make my heart smile.</b></a>
+            <p><span class="tulanmu"><a href="#">stranger</a></span><span class="tutime">2019-11-28</span></p>
+          </li>
+          <li><a href="#"><i><img src="images/02.jpg"></i><b>My heart is with you.</b></a>
+            <p><span class="tulanmu"><a href="#">stranger</a></span><span class="tutime">2019-11-28</span></p>
+          </li>
  
+          <li><a href="#"><i><img src="images/06.jpg"></i><b>Brief is life, but love is long.</b></a>
+            <p><span class="tulanmu"><a href="#">stranger</a></span><span class="tutime">2019-11-28</span></p>
+          </li>
+          <li><a href="#"><i><img src="images/04.jpg"></i><b>You complete me.</b></a>
+            <p><span class="tulanmu"><a href="#">stranger</a></span><span class="tutime">2019-11-28</span></p>
+          </li>
+          <li><a href="#"><i><img src="images/02.jpg"></i><b>I feel something for you.</b></a>
+            <p><span class="tulanmu"><a href="#">stranger</a></span><span class="tutime">2019-11-28</span></p>
+          </li>
+         
+        </ul>
+      </div>
+      <div class="ph">
+        <h3 class="tit">甜到骨子里的情话！</h3>
+        <ul class="rank">
+          <li><a href="#" title="【心路历程】不要在找我这条路上徘徊啦" target="_blank">【心路历程】不要在找我这条路上徘徊啦</a></li>
+          <li><a href="#" title="半途而废不好，建议你爱我到老" target="_blank">半途而废不好，建议你爱我到老</a></li>
+          <li><a href="#" title="想把日子熬成一碗粥，我来温水，你来砍柴" target="_blank">想把日子熬成一碗粥，我来温水，你来砍柴</a></li>
+          <li><a href="#" title="祈盼我温柔又耀眼，做你洁白岁月的星辰" target="_blank">祈盼我温柔又耀眼，做你洁白岁月的星辰</a></li>
+          <li><a href="#" title="你来跟我一起走，从长安月下，走至暮雪白头！" target="_blank">你来跟我一起走，从长安月下，走至暮雪白头</a></li>
+          <li><a href="#" title="人生这么短暂，喜欢就要相互缠绕" target="_blank">人生这么短暂，喜欢就要相互缠绕</a></li>
+          <li><a href="#" title="无论早晚，我很庆幸遇见你" target="_blank">无论早晚，我很庆幸遇见你</a></li>
+          <li><a href="#" title="  或许我比我想的还爱你" target="_blank"> 或许我比我想的还爱你</a></li>
+          <li><a href="#" title="在没亲到你之前，你呼吸的空气都是我的情敌" target="_blank">在没亲到你之前，你呼吸的空气都是我的情敌</a></li>
+          <li><a href="#" title="想成为任何时候你回头看都是值得喜欢的人" target="_blank">想成为任何时候你回头看都是值得喜欢的人</a></li>
+          <li><a href="#" title="没有你，我的时间是缓慢的米勒行星" target="_blank">没有你，我的时间是缓慢的米勒行星</a></li>
+          <li><a href="" title="你是我一上只能遇见一次的惊喜" target="_blank">你是我一上只能遇见一次的惊喜</a></li>
+        </ul>
+      </div>
+      <div class="ad"> <img src="images/03.jpg"> </div>
+    </div>
+  </div>
+  <!-- container代码 结束 -->
+  <div class="jzend"></div>
+  <footer>
+    <div class="footer">
+      <div class="f_l">
+        <p>All Rights Reserved 版权所有：<a href="#">刘杰个人博客</a> 备案号QQ号：2026505852</p>
+      </div>
+      <div class="f_r textr">
+        <p>Design by DanceSmile</p>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
